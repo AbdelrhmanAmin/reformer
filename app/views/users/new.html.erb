@@ -1,21 +1,12 @@
 <%= form_for @user do |f| %>
+ <% @user.errors.full_messages.each do |error| %>
+    <strong><%= error %></strong><br />
+  <% end %>
   Username:<br> <%= f.text_field :username, placeholder: 'User Name' %> <br><br>
   E-Mail: <br> <%= f.text_field :email, value: '@gmail.com' %> <br><br>
   Password: <br> <%= f.password_field :password, placeholder: 'Enter your password!' %> <br><br>
   <%= f.submit "Create" %>
-<% end %>
-
-
-<% if @user.errors.any? %>
-  <div id="error_explanation">
-    <h3><%= pluralize(@user.errors.count, "error")%> stopped this information from being saved:</h3>
-
-    <% @user.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
-  </div>
-  <% end %>  
+<% end %> 
 <!--
 <%= form_tag('/users') do -%>
   <%= label_tag('user[username]', "Username") %><br>
