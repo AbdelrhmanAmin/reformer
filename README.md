@@ -39,6 +39,10 @@ rails db:migrate
 ```
 rails server
 ```
+Open your local server in the browser!
+```
+http://localhost:3000/
+```
 
 ## Author
 
