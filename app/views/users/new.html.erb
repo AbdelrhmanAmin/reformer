@@ -1,0 +1,43 @@
+<%= form_for @user do |f| %>
+  Username:<br> <%= f.text_field :username, placeholder: 'User Name' %> <br><br>
+  E-Mail: <br> <%= f.text_field :email, value: '@gmail.com' %> <br><br>
+  Password: <br> <%= f.password_field :password, placeholder: 'Enter your password!' %> <br><br>
+  <%= f.submit "Create" %>
+<% end %>
+
+
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h3><%= pluralize(@user.errors.count, "error")%> stopped this information from being saved:</h3>
+
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>  
+<!--
+<%= form_tag('/users') do -%>
+  <%= label_tag('user[username]', "Username") %><br>
+  <%= text_field_tag('user[username]')%><br><br>
+  <%= label_tag('user[email]', "Email") %><br>
+  <%= text_field_tag('user[email]')%><br><br>
+  <%= label_tag('user[password]', "Password") %><br>
+  <%= password_field_tag('user[password]')%><br><br>
+  
+  <div><%= submit_tag 'Create' %></div>
+<% end %>
+
+
+
+<form action="/users" method="POST" accept-charset="UTF-8">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label for="username">Username:</label>
+  <input type="text" name="user[username]" id="username"><br><br>
+  <label for="email">E-mail:</label>
+  <input type="text" name="user[email]" id="email"><br><br>
+  <label for="password">Password</label>
+  <input type="password" name="user[password]" id="password"><br><br>
+  <input type="submit" value="Create">
+</form> 
+-->
