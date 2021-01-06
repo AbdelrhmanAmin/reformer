@@ -43,6 +43,13 @@ Open your local server in the browser!
 ```
 http://localhost:3000/
 ```
+## SCREENSHOTS
+  ### HOME PAGE
+  ![screenshot](Index.png)
+  ### NEW PAGE
+  ![screenshot](NEW.png)
+  ### EDIT
+  ![screenshot](EDIT.png)
 
 ## Author
 
