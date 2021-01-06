@@ -1,24 +1,70 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Re-Former
 
-Things you may want to cover:
+-Models, Views and Controllers (MVC)
+-Made as a practice for form validations in rails.
+-Form allows to create new users and edit them.
+-Field information must fulfill validations.
 
-* Ruby version
+## Built With
+- Ruby
+- Ruby on rails
+- SQLite3
+- The bothersome Rubocop
 
-* System dependencies
+## Pre-requisites
+- Ruby 2.7.0
+- Rails gem
+- Bundle
 
-* Configuration
+### Setup
 
-* Database creation
+-Open your terminal and go to the directory where you want to clone the repo.
 
-* Database initialization
+-Clone the repository to your local machine. 
+run `git clone https://github.com/AbdelrhmanAmin/Re-former.git`
 
-* How to run the test suite
+-Install the necessary gems to run the project. 
+```
+bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+- Also please run this command to run all the migration for the database and have all tables updated and read to use 
+```
+rails db:migrate
+```
 
-* Deployment instructions
+-Now your environment is ready to run the project. Type:
+```
+rails server
+```
+Open your local server in the browser!
+```
+http://localhost:3000/
+```
+## SCREENSHOTS
+  ### HOME PAGE
+  ![screenshot](Index.png)
+  ### NEW PAGE
+  ![screenshot](NEW.png)
+  ### EDIT
+  ![screenshot](EDIT.png)
 
-* ...
+## Author
+
+😎 **Abdo Amin**
+
+- GitHub: [@Abdelrhman-Amin](https://github.com/AbdelrhmanAmin)
+- Twitter: [@Abdo Amin](https://twitter.com/AbdoAmi60489112)
+- LinkedIn: [@Abdo Amin](https://www.linkedin.com/in/abdo-amin-ab786a1b0/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/AbdelrhmanAmin/reformer/issues).
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
